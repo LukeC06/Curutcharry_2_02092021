@@ -1,12 +1,13 @@
 
 
-header {
+#header {
   margin: 0 0 0 0;
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: stretch; 
-  align-items: flex-start;
+  justify-content: flex-end; 
+  align-items: flex-end;
+  flex-direction: row-reverse;
   color: blue;
 }
 
@@ -54,7 +55,7 @@ element {
 
 
 
-img {
+#img {
     justify-content: space-between;
     flex-direction: column;
     padding: 25px
@@ -72,8 +73,11 @@ img {
 }
 
 footer {
-  flex-direction: column;
-  flex: all;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+
     background-color: lightgrey;
     text-align: justify;
 } 
