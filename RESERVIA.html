@@ -1,32 +1,23 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-	<script src="https://kit.fontawesome.com/6b8648a2d3.js" crossorigin="anonymous">
-	
-	</script>
-  <link rel="stylesheet" href="styleRESERVIA.css">
-
-    <!-- Metatags, links to Bootstrap and stylesheets -->
-</head>
-<body>
-
+	<head>
+		<script src="https://kit.fontawesome.com/6b8648a2d3.js" crossorigin="anonymous">
+		</script>
+  		<link rel="stylesheet" href="styleRESERVIA.css">
+<!-- Metatags, links to Bootstrap and stylesheets -->
+	</head>
+	<body>
 <!-- Header -->
-<header>
-	<section id="Header">
-		           <h1>
-			<img src="images/logo/Reservia.svg">
-				<p> <li><a href="Hebergements">Hébergements</a></li>
-					<li><a href="Activités">Activités</a></li>
-					<li><a href="S'inscrire">S'inscrire</a></li>
-				</p>
-				<h1>
-				<form method="post" action="form.php">
-	</section>
+<header class="header">
+    <img class="headerImg" src="images/logo/Reservia.svg" alt="Reservia">
+    <nav class="headerNav">
+      <a class="headerNavLink" href="#hosting" data-active="true">Hébergement</a>
+      <a class="headerNavLink" href="#activity" data-active="false">Activités</a>
+    </nav>
+    <a class="headerSignup" href="#">S'inscrire</a>
 </header>
-
 <!-- Section 1 Description & Navigation -->
-<nav>
+		<nav>
 					<p>
 						<h2> Trouvez votre hébergement pour des vacances de rêve </h2>
 						<p>En plein centre ville ou en pleine nature</p>
@@ -45,7 +36,6 @@
 		<i class="fas fa-info-circle">Plus de 500 logements sont disponibles dans cette ville</i>
 </p>
 </section>
-
 <!-- Section 3 Contenu mis en avant & Hebergements -->
 <section id="featured_content">
 	<div>
@@ -64,7 +54,6 @@
 		<aside><img src="images/hebergements/4_small/hotellesoleildumatin.jpg"></aside>
 	</div>
 </section>
-
 <!-- Section 4 Activités & Details -->
 <section id="details">
 	<h1>Activités à Marseille</h1>
@@ -75,25 +64,28 @@
 	<img src="images/Activites/4_small/notredamedelagarde.jpg">
 	<img src="images/Activites/4_small/parclongchamp.jpg">
 </section>
-
-<footer>
-	
-	<P><h2><a href="A propos">A Propos</a></h2></P>
-		<a href="Fonctionnement du site">Fonctionnement du site</a></li>
-		<a href="Conditions générales de vente">Conditions générales de vente</a>
-		<a href="Données et confidentialité">Données et confidentialité</a>
-
-	<p><h2><a href="Nos hébergements">Nos hébergements</a></h2> </p>
-		<a href="Charte qualité">Charte qualité</a>
-		<a href="Soumettre votre hôtel">Soumettre votre hôtel</a>
-
-	<p><h2><a href="Assistance">Assistance</a></h2></p>
-		<a href="Centre d'aide">Centre d'aide</a>
-		<a href="Nous-contacter">Nous contacter</a>
-	
-
-</footer>
-
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footerColumnwrapper">
+      <div class="footerColumnwrapperColumn">
+        <h3 class="footerColumnwrapperColumnTitle">A propos</h3>
+        <a href="#" class="footerColumnwrapperColumnLink">Fonctionnement du site</a>
+        <a href="#" class="footerColumnwrapperColumnLink">Conditions générales de vente</a>
+        <a href="#" class="footerColumnwrapperColumnLink">Données et confidentialités</a>
+      </div>
+      <div class="footerColumnwrapperColumn">
+        <h3 class="footerColumnwrapperColumnTitle">Nos hébergement</h3>
+        <a href="#" class="footerColumnwrapperColumnLink">Charte qualité</a>
+        <a href="#" class="footerColumnwrapperColumnLink">Soumettre votre hotel</a>
+      </div>
+      <div class="footerColumnwrapperColumn">
+        <h3 class="footerColumnwrapperColumnTitle">Assitance</h3>
+        <a href="#" class="footerColumnwrapperColumnLink">Centre d'aide</a>
+        <a href="#" class="footerColumnwrapperColumnLink">Nous contacter</a>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER -->
 </body>
-
+</html>
 </html>

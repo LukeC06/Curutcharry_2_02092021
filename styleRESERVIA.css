@@ -1,14 +1,14 @@
 
 
-#header {
-  margin: 0 0 0 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end; 
-  align-items: flex-end;
-  flex-direction: row-reverse;
-  color: blue;
+header {
+margin: 0 0 0 0;
+padding: 0;
+list-style: none; 
+display: flex;
+justify-content:space-between;
+align-items: stretch;
+flex-direction: row;
+color: blue;
 }
 
 
@@ -16,11 +16,15 @@ body {
     font-family: raleway, sans-serif, inherit;
 }
 
+div {
+  display: flex ;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
-
-p {color:;
+p {color: black;
     font-family : Raleway, sans-serif, inherit;}
-    
+
 
 a:link {
   color: black;
@@ -53,16 +57,24 @@ element {
 }
 
 
+section:
 
+  img {
+  width: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items:flex-start;
+  }
 
-#img {
+  img {
     justify-content: space-between;
     flex-direction: column;
-    padding: 25px
+    padding: 25px ;
   border-radius: 50px;
-}
-
-
+  background-color: ghostwhite;
+  }
+    body { background-color: white }
 
 .nav
  {
@@ -72,12 +84,15 @@ element {
   ;
 }
 
+.apropos
+{
+  display: flex;
+  flex-direction: column;
+}
 footer {
   display: flex;
+align-items: stretch;
   justify-content: space-between;
-  align-items: flex-end;
-  flex-wrap: wrap;
-
-    background-color: lightgrey;
-    text-align: justify;
+  flex-direction: column;
+  background-color: lightgray
 } 
