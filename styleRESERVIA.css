@@ -1,20 +1,40 @@
+@import 
+url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
 
-
-header {
-margin: 0 0 0 0;
-padding: 0;
-list-style: none; 
-display: flex;
-justify-content:space-between;
-align-items: stretch;
-flex-direction: row;
-color: blue;
+body
+{
+  font-family: raleway;
+  margin: 0;
+}
+#bloc_page {
+ 
+   margin: 0 auto;
+   max-width: 85rem;
+}
+.logo
+{
+  width: 7%; 
+}
+.header a
+{
+ width: 43%;
+ text-align: center;
+ text-decoration: none;
+}
+.header-bar
+{
+ display: flex;
+ justify-content: space-between;
+ height: 4.125rem;
+}
+.header-nav
+{
+ width: 30%;
+ display:flex;
+ justify-content: space-evenly; 
+ align-items: baseline;
 }
 
-
-body {
-    font-family: raleway, sans-serif, inherit;
-}
 
 div {
   display: flex ;
