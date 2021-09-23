@@ -1,50 +1,138 @@
 @import 
 url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
 
+/** BODY **/
 body
 {
-  font-family: raleway;
-  margin: 0;
-}
-#bloc_page {
- 
-   margin: 0 auto;
-   max-width: 85rem;
-}
-.logo
-{
-  width: 7%; 
-}
-.header a
-{
- width: 43%;
- text-align: center;
- text-decoration: none;
-}
-.header-bar
-{
- display: flex;
- justify-content: space-between;
- height: 4.125rem;
-}
-.header-nav
-{
- width: 30%;
- display:flex;
- justify-content: space-evenly; 
- align-items: baseline;
+  font-family: "raleway", sans-serif;
 }
 
-
-div {
-  display: flex ;
-  justify-content: space-between;
-  align-items: flex-start;
+h1, h2, h3, strong{
+  font-weight: bold;
 }
 
 p {color: black;
-    font-family : Raleway, sans-serif, inherit;}
+  font-family : Raleway, sans-serif, inherit;
+}
 
+div {
+    display: flex ;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+img {
+  max-width: 100%;
+}
+
+section, aside{
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.icons_map, .icons_search, .filters_icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/** HEADER & SEARCH **/ 
+
+.logo{
+  width: 50%;
+  padding-left: 20px;
+}
+
+nav{  
+  padding-top: 30px;  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search_bar{
+  margin-top: 35px;
+  margin-bottom: 35px;
+  display: flex;
+  border: solid 2px #F2F2F2;
+  border-radius: 10px;
+  width: 330px;
+}
+
+.icons_map{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+  border-radius: 10px 0 0 10px;
+   
+}
+
+.icons_search{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0065FC;
+  border-radius: 10px;
+  color: white;
+}
+
+input{
+  width: 230px;
+  padding-left: 15px;
+  border: none;
+}
+
+.filters{
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filters_button{
+  display: flex;
+  border: 2px #F2F2F2 solid;
+  border-radius: 30px;
+  width: max-content;
+}
+
+.filters_button:hover{
+  background-color: #b8b9b9;
+}
+
+.filters_names{
+  margin: 15px;
+}
+
+.filters_icons{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #DEEBFF;
+  color: #0065FC;
+}
+
+.informations{
+  display: flex;
+}
+
+.info_icons{
+  height: 25px;
+  width: 25px;
+  border: 1px solid #F2F2F2;
+  border-radius: 50%;
+  color: #0065FC;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 a:link {
   color: black;
@@ -62,57 +150,52 @@ a:active {
   color: blue;
 }
 
-element {
-    color: blue; /* change la couleur */
-    opacity: 0.1; /* change l'opacité. Ici 10% */
-    background-color: yellow; /* change la couleur de fond */
-    font-family: Arial;/* change la police utilisée */
-    text-align: center; /* change l'allignement */
-    font-size: 14px; /* change la taille de la police */
-    border: 1px solid black; /* ajoute une bordure */
-    margin: 5px; /* ajoute une marge autour de l'élément */
-    padding: 10px; /* ajoute de l'espace à l'intérieur de l'élément */
-    height: 50px; /* hauteur de l'élément */
-    width: 50px; /* largeur de l'élément */
+/** POPULAR **/
+#popular{
+  background-color: #F2F2F2;
 }
 
-
-section:
-
-  img {
-  width: 30px;
-  width: 30px;
-  display: flex;
-  justify-content: flex-end;
-  align-items:flex-start;
-  }
-
-  img {
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 25px ;
-  border-radius: 50px;
-  background-color: ghostwhite;
-  }
-    body { background-color: white }
-
-.nav
- {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  ;
+.pic_popular{
+  display: block;
+  border-radius: 10px 0 0 10px;
+  height: 135px;
+  width: 130px; 
 }
 
-.apropos
-{
-  display: flex;
-  flex-direction: column;
+/** HEBERGEMENT **/
+.pic_heberg{
+  height: 115px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
 }
-footer {
-  display: flex;
-align-items: stretch;
-  justify-content: space-between;
-  flex-direction: column;
-  background-color: lightgray
-} 
+footer{
+  background-color: #F2F2F2;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+}
+li{
+  padding: 10px;
+  list-style: none;
+}
+
+/** ACTIVITES **/
+
+#Activites{
+  background-color: white;
+}
+
+.pic_activites{
+  height: 65%;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+/** FOOTER **/
+footer{
+  background-color: #F2F2F2;
+}
+
+li{
+  list-style: none;
+}
