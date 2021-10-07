@@ -19,15 +19,12 @@ img {
   max-width: 100%;
 }
 
-
-
+/** HEADER & SEARCH **/ 
 .icons_map, .icons_search, .filters_icons{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/** HEADER & SEARCH **/ 
 
 .logo{
   width: 50%;
@@ -57,7 +54,6 @@ nav{
   align-items: center;
   background-color: #F2F2F2;
   border-radius: 10px 0 0 10px;
-   
 }
 
 .icons_search{
@@ -137,6 +133,12 @@ a:active {
 
 /** POPULAR **/
 
+aside{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .popular{
   display: flex;
   flex-wrap: wrap;
@@ -161,11 +163,9 @@ section, aside{
 }
 
 /** HEBERGEMENT **/
-
 .hebergement {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .pic_heberg{
@@ -187,17 +187,37 @@ li{
 /** ACTIVITES **/
 .activites{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 #Activites{
   background-color: white;
 }
 
-.pic_activites{
-  height: 65%;
+.activites {
+  margin-bottom: 30px;
+}
+
+.activites a {
+  color: black;
+  text-decoration: none;
+}
+
+.activites h3 {
+  margin: 15px
+}
+
+.activites h4 {
+  margin: 5px;
+  margin-left: 15px;
+}
+
+.activites img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 140px;
   width: 100%;
-  border-radius: 10px 10px 0 0;
+  object-fit: cover;
 }
 
 /** FOOTER **/
