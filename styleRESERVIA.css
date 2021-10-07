@@ -2,7 +2,6 @@
 url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
 
 /** BODY **/
-
 body
 {
   font-family: "raleway", sans-serif;
@@ -16,11 +15,11 @@ p {color: black;
   font-family : Raleway, sans-serif, inherit;
 }
 
-div {
-    display: flex ;
-    justify-content: space-between;
-    align-items: flex-start;
+img {
+  max-width: 100%;
 }
+
+
 
 .icons_map, .icons_search, .filters_icons{
   display: flex;
@@ -38,7 +37,7 @@ div {
 nav{  
   padding-top: 30px;  
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: ;
 }
 
 .search_bar{
@@ -82,7 +81,7 @@ input{
   margin-top: 15px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content:flex-start;
 }
 
 .filters_button{
@@ -108,18 +107,6 @@ input{
   color: #0065FC;
 }
 
-.informations{
-  display: flex;
-}
-
-.stars .fas[data-active ="true"] {
-  color: #0065fc;
-}
-
-.stars .fas[data-active ="false"] {
-  color: #d9d9d9;
-}
-
 .info_icons{
   height: 25px;
   width: 25px;
@@ -137,7 +124,7 @@ a:link {
 }
 
 a:visited {
-  color: cyan;
+  color: black;
 }
 
 a:hover {
@@ -148,122 +135,93 @@ a:active {
   color: blue;
 }
 
-
 /** POPULAR **/
 
+.popular{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section, aside{
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 #popular{
   background-color: #F2F2F2;
-  padding: 5px;
-  width: auto;
 }
 
-.aside_card {
+.pic_popular{
   display: block;
   border-radius: 10px 0 0 10px;
   height: 135px;
   width: 130px; 
 }
 
-/** ASIDE **/
-
-.aside_card {
-    background-color: #F2F2F2;
-    padding: 5px;
-    width: auto;
-}
-
-.aside_card .card {
-    background-color: white;
-    border-radius: 25px;
-    color: black;
-    display: flex;
-    height: 120px;
-    margin: 15px;
-    width: auto;
-}
-
-.aside_card a:hover {
-    color: black;
-    text-decoration: none;
-}
-
-.aside_card .imgCard {
-    align-items: center;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-    border: 2px solid white;
-    height: 113px;
-    object-fit: cover;
-    width: 128px;
-}
-
-.aside_card .card .content-card {
-    padding-top: 15px
-}
-
-.aside_card .content-card h4 {
-    font-size: 16px;
-    margin: 0px 10px;
-}
-
-.aside_card .content-card span {
-    font-size: 12px;
-    margin: 10px;
-    text-align: left;
-}
-
-
-.aside_card .ratting-stars {
-    margin-left: 10px;
-}
-
-.aside_card .fa-star {
-    font-size: 10px;
-    margin-top: 8px;
-}
-
 /** HEBERGEMENT **/
+
+.hebergement {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .pic_heberg{
   height: 115px;
-  width: 40%;
+  width: 100%;
   border-radius: 10px 10px 0 0;
 }
-
-.card_container{
-  display: flex;
-  justify-content: flex-end;
+footer{
+  background-color: #F2F2F2;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
 }
+li{
+  padding: 10px;
+  list-style: none;
+}
+
 /** ACTIVITES **/
+.activites{
+  display: flex;
+  flex-direction: column;
+}
 
 #Activites{
   background-color: white;
 }
 
 .pic_activites{
-  height: 40%;
-  width: 40%;
+  height: 65%;
+  width: 100%;
   border-radius: 10px 10px 0 0;
 }
 
-/** Footer **/
-
+/** FOOTER **/
 footer {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 20px;
-    text-align: left;
-  }
-h2 {
-    font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #F2F2F2;
+  padding: 20px;
 }
-ul {
-    margin: 10px 0px;
-    padding: 0;
-    list-style-type: none
+
+footer ul {
+  list-style: none;
 }
-li {
-    text-decoration: none;
-    padding: 4px
+
+footer h2 {
+  font-size: 18px
+}
+
+footer li {
+  padding: 4px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
 }
