@@ -6,6 +6,10 @@ url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
   max-width: 1440px;
 }
 
+html {
+  margin: auto;
+}
+
 /** BODY **/
 body
 {
@@ -55,6 +59,11 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.fa-chart-line{ 
+  float: right;
+  padding: 28px;
 }
 
 .logo{
@@ -182,22 +191,30 @@ a:active {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  width: 100%;
+  height: auto;
 }
 
-.popular {
+.header_popular {
+  width: 100%;
+}
+
+#popular {
   background-color: #F2F2F2;
   padding: 5px;
-  width: auto;
   border-radius: 25px;
   color: black;
   display: flex;
-  height: 120px;
-  margin: 15px;
+  flex-wrap: wrap;
+  margin: 0px 0px 0px 15px;
   text-decoration: none;
   transform-origin: 50% 50%;
   transition: transform 0.1s linear;
-  width: auto;
+  width: 35%;
+  float: left;
+  height: 100%;
 }
+
 
 .aside_card {
   background-color: white;
@@ -213,7 +230,11 @@ a:active {
   width: auto;
 }
 
-.popular a:hover {
+.aside_card:first-child {
+  margin-top: 0px;
+}
+
+#popular a:hover {
   color: black;
   text-decoration: none;
   transform: scale(1.02) rotate(0.1deg);
@@ -229,30 +250,34 @@ a:active {
   width: 128px;
 }
 
-.popular .aside_card .card_content {
+#popular .aside_card .card_content {
   padding-top: 15px
 }
 
-.popular .card_content h3 {
+#popular .card_content h3 {
   font-size: 16px;
   margin: 0px 10px;
 }
 
-.popular .card_content span {
+#popular .card_content span {
   font-size: 12px;
   margin: 10px;
   text-align: left;
 }
 
-.popular .stars {
+#popular .stars {
   margin-left: 10px;
 }
 
-.popular .fa-star {
+#popular .fa-star {
   font-size: 10px;
   margin-top: 8px;
 }
 
+#popular h2 {
+  float : left;
+  padding-left : 30px;
+}
 /** HEBERGEMENT **/
 
 #hebergement {
@@ -261,20 +286,25 @@ a:active {
   flex-wrap: wrap;
   background-color: #F2F2F2;
   justify-content: space-between;
-  padding: 5px;
-  width: auto;
+  padding: 15px;
+  width: 65%;
+}
+
+.titre_hebergement {
+  padding-left: 10px;
 }
 
 .hebergement_marseille {
   display: flex;
   flex-direction: row;
+  float: left;
+  margin-left: 20px;
 }
 
 .card_hebergement {
   background-color: #F2F2F2;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-content: space-between;
   border-radius: 20px;
   padding: 44px 36px 44px 36px;
@@ -283,7 +313,7 @@ a:active {
   padding: 5px 5px 10px 5px;
   background-color: white;
   width: 320px;
-  height: 280px;
+  height: 200px;
   margin-bottom: 28px;
 }
 
@@ -293,7 +323,7 @@ a:active {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 15px;
 }
 
 .hebergement_image {
@@ -308,7 +338,7 @@ a:active {
   height: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  height: 200px;
+  height: 120px;
 }
 
 .contenu_hebergement {
@@ -317,10 +347,20 @@ a:active {
   justify-content: space-around;
   padding-left: 16px;
 }
+.contenu_heberg h3 {
+  margin: 3px 0px;
+}
+
+.contenu_heberg {
+  padding: 7px;
+}
 
 .titre_contenu {
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-bottom: 8px;
+}
+
+.box_hebergement a {
+  text-decoration: none;
 }
 
 .hebergement_notation {
@@ -447,20 +487,19 @@ a:active {
 
 /** FOOTER **/
 
-
 li{
   padding: 10px;
   list-style: none;
 }
 
+
 footer {
   display: flex;
   flex-direction: wrap;
-  justify-content: space-between;
   background-color: #F2F2F2;
   flex-direction: row;
   max-width: 1350px;
-  padding: 48px 20px 51px 50px;
+  padding: 15px 20px 0px 0px;
 }
 
 footer ul {
