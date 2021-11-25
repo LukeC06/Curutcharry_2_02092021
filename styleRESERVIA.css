@@ -18,6 +18,10 @@ body
   padding-left: 50px;
   padding-right: 50px;
 }
+div {
+ font-family: Raleway, sans-serif, inherit;
+ text-decoration: none;   
+}
 
 h1, h2, h3, strong{
   font-weight: bold;
@@ -212,7 +216,6 @@ a:active {
   transition: transform 0.1s linear;
   width: 35%;
   float: left;
-  height: 100%;
 }
 
 
@@ -317,6 +320,7 @@ a:active {
   margin-bottom: 28px;
 }
 
+
 .box_hebergement {
   display: flex;
   flex-direction: row;
@@ -379,13 +383,18 @@ a:active {
   margin-top: 5px;
 }
 
-.hebergement .see-more {
+.hebergement .see_more {
   color: black;
   font-size: 12px;
   margin: 15px;
   text-decoration: none;
 }
 
+.see_more {
+  text-decoration: none;
+  font-family : Raleway, sans-serif, inherit;
+  font-size: 15px;
+}
 /** ACTIVITES **/
 
 #ActivitesMarseille {
@@ -495,9 +504,9 @@ li{
 
 footer {
   display: flex;
-  flex-direction: wrap;
-  background-color: #F2F2F2;
   flex-direction: row;
+  justify-content: space-between;
+  background-color: #F2F2F2;
   max-width: 1350px;
   padding: 15px 20px 0px 0px;
 }
