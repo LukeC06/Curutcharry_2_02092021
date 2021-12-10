@@ -258,13 +258,10 @@ a:active {
   transition: transform 0.1s linear;
   width: 35%;
   float: left;
-<<<<<<< HEAD
   /*flex-direction: row;
   flex-wrap: wrap;
   justify-content: start;
   align-content: space-between;*/
-=======
->>>>>>> 75c6fb0eba85a3d4b8551ef7bccbf96e12ff0966
 }
 
 
@@ -481,15 +478,12 @@ a:active {
   text-decoration: none;
   font-family : Raleway, sans-serif, inherit;
   font-size: 15px;
-<<<<<<< HEAD
   padding: 0px 5px;
 }
 
 .see_more a {
   text-decoration: none;
   font-weight: 600;
-=======
->>>>>>> 75c6fb0eba85a3d4b8551ef7bccbf96e12ff0966
 }
 /** ACTIVITES **/
 
