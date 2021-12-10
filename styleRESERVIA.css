@@ -18,6 +18,10 @@ body
   padding-left: 50px;
   padding-right: 50px;
 }
+div {
+ font-family: Raleway, sans-serif, inherit;
+ text-decoration: none;   
+}
 
 h1, h2, h3, strong{
   font-weight: bold;
@@ -43,16 +47,38 @@ nav{
   font-size: 14px;
   font-weight: bold;
   justify-content: space-between;
-  padding: 40px;
 }
 
-.links1 {
-  padding-top: 30px;
+.links {
+
+}
+
+.link {
+  padding: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.link.active {
+  color: #0065FC;
+  border-top: solid 2px #0065FC;
 }
 
 .signup{
-  padding-top: 30px;
   text-decoration: none;
+  color: #0065FC;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
 }
 
 .icons_map, .icons_search, .filters_icons{
@@ -63,12 +89,12 @@ nav{
 
 .fa-chart-line{ 
   float: right;
-  padding: 28px;
+  padding-right: 20px;
 }
 
 .logo{
   width: 50%;
-  padding-left: 20px;
+  padding: 20px 0px;
 }
 
 .search_bar{
@@ -95,19 +121,23 @@ nav{
 
 .icons_search{
   height: 50px;
-  width: 50px;
+  width: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #0065FC;
-  border-radius: 10px;
+  border-radius: 0px 15px 15px 0px;
   color: white;
+  font-weight: 600;
 }
 
 input{
   width: 230px;
-  padding-left: 15px;
+  padding: 0px 15px;
   border: none;
+  font-weight: 600;
+  color: #000;
+  font-size: 14px;
 }
 
 .filters{
@@ -117,13 +147,19 @@ input{
   justify-content:flex-start;
 }
 
+.filters_title {
+  font-weight: 600;
+  padding: 10px;
+  margin-right: 20px;
+}
+
 .filters_names{
   margin: 15px;
 }
 
 .filters_icons{
-  height: 50px;
-  width: 50px;
+  height: 42px;
+  width: 42px;
   border-radius: 50%;
   background-color: #DEEBFF;
   color: #0065FC;
@@ -160,9 +196,18 @@ input{
   border: 2px solid #DEEBFF;
 }
 
+.stars {
+  font-size: 13px;
+}
+
+.grey {
+  color: #d9d9d9 !important;
+}
+/*
 a:link {
   color: black;
 }
+*/
 
 a:visited {
   color: black;
@@ -177,7 +222,7 @@ a:active {
 }
 
 .info_filters {
-  margin: 25px 5px;
+  margin: 15px 5px 25px 5px;
 }
 
 .info_filters i {
@@ -197,11 +242,12 @@ a:active {
 
 .header_popular {
   width: 100%;
+  height: 30px;
 }
 
 #popular {
   background-color: #F2F2F2;
-  padding: 5px;
+  padding: 15px;
   border-radius: 25px;
   color: black;
   display: flex;
@@ -212,7 +258,10 @@ a:active {
   transition: transform 0.1s linear;
   width: 35%;
   float: left;
-  height: 100%;
+  /*flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: space-between;*/
 }
 
 
@@ -222,16 +271,26 @@ a:active {
   border: 2px solid whitesmoke;
   color: black;
   display: flex;
-  height: 120px;
-  margin: 15px;
+  height: 143px;
+  margin: 0px 15px 15px 15px;
   text-decoration: none;
-  transform-origin: 50% 50%;
+  /*transform-origin: 50% 50%;*/
   transition: transform 0.1s linear;
   width: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: calc(100% - 20px);
+  padding: 5px;
+  box-shadow: 2px 2px 5px #cecece;
 }
 
 .aside_card:first-child {
   margin-top: 0px;
+}
+
+#popular a {
+  text-decoration: none;
+  width: calc(100% - 20px);
 }
 
 #popular a:hover {
@@ -245,18 +304,27 @@ a:active {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
   border: 2px solid white;
-  height: 113px;
+  height: 140px;
   object-fit: cover;
-  width: 128px;
+  width: 140px;
+}
+
+#popular .aside_card .card_popular {
+  float: left;
 }
 
 #popular .aside_card .card_content {
-  padding-top: 15px
+  float: left;
+  padding: 15px;
+  width:calc(100% - 164px);
+  height: 100%;
+  position: relative;
 }
 
 #popular .card_content h3 {
   font-size: 16px;
-  margin: 0px 10px;
+  margin: 0px;
+  margin-bottom: 5px;
 }
 
 #popular .card_content span {
@@ -266,7 +334,9 @@ a:active {
 }
 
 #popular .stars {
-  margin-left: 10px;
+  margin-left: 0px;
+  position: absolute;
+  bottom: 10px;
 }
 
 #popular .fa-star {
@@ -275,8 +345,9 @@ a:active {
 }
 
 #popular h2 {
-  float : left;
   padding-left : 30px;
+  width: 100%;
+  height: 21px;
 }
 /** HEBERGEMENT **/
 
@@ -288,6 +359,7 @@ a:active {
   justify-content: space-between;
   padding: 15px;
   width: 65%;
+  border-radius: 25px;
 }
 
 .titre_hebergement {
@@ -315,7 +387,9 @@ a:active {
   width: 320px;
   height: 200px;
   margin-bottom: 28px;
+  box-shadow: 2px 2px 5px #cecece;
 }
+
 
 .box_hebergement {
   display: flex;
@@ -324,6 +398,20 @@ a:active {
   justify-content: space-between;
   align-content: space-between;
   margin-bottom: 15px;
+}
+
+.box_popular {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-bottom: 15px;
+  height: calc(100% - 50px);
+}
+
+.box_hebergement a:hover {
+  color: #000;
 }
 
 .hebergement_image {
@@ -379,13 +467,24 @@ a:active {
   margin-top: 5px;
 }
 
-.hebergement .see-more {
+.hebergement .see_more {
   color: black;
   font-size: 12px;
   margin: 15px;
   text-decoration: none;
 }
 
+.see_more {
+  text-decoration: none;
+  font-family : Raleway, sans-serif, inherit;
+  font-size: 15px;
+  padding: 0px 5px;
+}
+
+.see_more a {
+  text-decoration: none;
+  font-weight: 600;
+}
 /** ACTIVITES **/
 
 #ActivitesMarseille {
@@ -398,8 +497,12 @@ a:active {
 }
 
 .titre_activites {
-  margin-bottom: 27px;
+  margin: 50px 0px 30px 10px;
   font-size: large;
+}
+
+h4 {
+  margin: 20px 20px;
 }
 
 .activites {
@@ -409,10 +512,22 @@ a:active {
   justify-content: space-between;
 }
 
+.activites a {
+  text-decoration: none;
+}
+
 .activite2_3,
 .activite5_6 {
   display: flex;
   flex-direction: column;
+}
+
+.activite3 {
+  margin-top: 29px;
+}
+
+.activite6 {
+  margin-top: 32px;
 }
 
 .activite1,
@@ -421,11 +536,13 @@ a:active {
 .activite4,
 .activite5,
 .activite6 {
-  padding: 0px 0px 20px 0px;
+  padding: 0px;
   border-radius: 20px;
   border-color: white;
   max-width: 375px;
   margin-left: 10px;
+  box-shadow: 0px 2px 5px #dbdbdb;
+
 }
 
 .card_activite1,
@@ -437,7 +554,7 @@ a:active {
   background-size: 10% 10%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  padding: 0px 0px 22px 0px;
+  padding: 0px;
 }
 
 .pic_activite1,
@@ -495,11 +612,16 @@ li{
 
 footer {
   display: flex;
-  flex-direction: wrap;
-  background-color: #F2F2F2;
   flex-direction: row;
+  justify-content: space-between;
+  background-color: #F2F2F2;
   max-width: 1350px;
   padding: 15px 20px 0px 0px;
+  margin-top: 80px;
+}
+
+footer section {
+  width: 33.3%;
 }
 
 footer ul {
