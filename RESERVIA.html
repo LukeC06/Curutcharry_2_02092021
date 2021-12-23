@@ -4,11 +4,12 @@
 
 <html lang='Fr'>
 	<head>
-		<script src="https://kit.fontawesome.com/6b8648a2d3.js" crossorigin="anonymous">
-		</script>
-  		<link rel="stylesheet" href="styleRESERVIA.css">
-	<body>
+		<script src="https://kit.fontawesome.com/6b8648a2d3.js" crossorigin="anonymous"></script>
+  	<link rel="stylesheet" href="styleRESERVIA.css">
 	</head>
+
+  <body>
+	
 
 <!-- Header and nav -->
 
@@ -17,17 +18,32 @@
 		<div class="logo">
 			<img src="images/logo/Reservia.svg" alt="Logo Reservia">
 		</div>
-			<a class="signup" href="#main_header">S'inscrire</a>
-			<a class="links1" href="#hebergements">Hébergements</a>
-			<a class="links1" href="#activites">Activités</a>
+    <div class="links">
+			<div class="link active"><a href="#hebergements">HÃ©bergements</a></div>
+			<div class="link"><a href="#activites">ActivitÃ©s</a></div>
+      <div class="link signup"><a href="#main_header">S'inscrire</a></div>
+    </div>
 	</nav>
+</header>
+
+<header id="mobile_header">
+  <nav>
+    <div class="logo">
+      <img src="images/logo/Reservia.svg" alt="Logo Reservia">
+      <a href="#main_header" style="float: right;">S'inscrire</a>
+    </div>
+    <div class="links">
+      <div class="link active"><a href="#hebergements">HÃ©bergements</a></div>
+      <div class="link"><a href="#activites">ActivitÃ©s</a></div>
+    </div>
+  </nav>
 </header>
 
 <!-- search -->
 
 <section class="search">
 	<div class="header_search">
-		<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+		<h1>Trouvez votre hÃ©bergement pour des vacances de rÃªve</h1>
 		<p>En plein centre ville ou en pleine nature</p>
 	</div>
 	<form class="search_bar" method="post" action="traitement.php">
@@ -35,20 +51,28 @@
 			<i class="fas fa-map-marker-alt"></i>
 		</div>
 		<input type="search" placeholder="Marseille, France">
-		<div class="icons_search">
-				<i class="fas fa-search"></i>
-		</div>
+		<div id="main_header">
+      <input type="submit" class="icons_search" value="Rechercher">
+    </div>
+
+    <div id="mobile_header">
+      <button type="submit" class="icons_search">
+        <i class="fas fa-search" style="font-size: 18px"></i>
+      </button>
+    </div>
+    
 	</form>
 	<div class="titleandfilters">
-		<div class="filters_title">
-			<h2>Filtres</h2>
+		
+			
 		<div class="filters">
-		<div class="filters_button">
-		<div class="filters_icons">
-			<i class="fas fa-money-bill-wave"></i>
-		</div>
-		<p class="filters_names">Économique</p>
-		</div>
+      <div class="filters_title">Filtres</div>
+  		<div class="filters_button">
+    		<div class="filters_icons">
+    			<i class="fas fa-money-bill-wave"></i>
+    		</div>
+  		<p class="filters_names">Ã‰conomique</p>
+  		</div>
 			<div class="filters_button">
 				<div class="filters_icons">
 					<i class="fas fa-child"></i> 
@@ -65,10 +89,9 @@
 				<div class="filters_icons">
 					<i class="fas fa-dog"></i>
 				</div>
-				<p class="filters_names">Animaux autorisés</p>
+				<p class="filters_names">Animaux autorisÃ©s</p>
 			</div>
 		</div>
-	</div>
 		<div class="info_filters">
     		<span><i class=" fas fa-info-circle" aria-hidden="true"></i>Plus de 500 logements sont disponibles dans cette ville</span>
 		</div>
@@ -79,178 +102,187 @@
 <!-- Section 1 Hebergements Populaires -->
 
 <div class="host">
-	<aside id="popular">
-		<div class="header_popular">
-			<h2>Les plus populaires</h2>
-			<i class="fas fa-chart-line"></i>
-		</div>
-	<a class="aside_card" href="#">
-		<div class="card_popular">
-			<img class="pic_popular" src="images/hebergements/4_small/hotellesoleildumatin.jpg" alt="chambre luxueuse dans les tons vert avec lit double"/>
-		</div>
-		<div class="card_content">
-			<h3>Hôtel Le Soleil du matin</h3> Nuit à partir de 128€
-			<div class="stars">
-        		<i class="fas fa-star"></i>
-        		<i class="fas fa-star"></i>
-        		<i class="fas fa-star"></i>
-        		<i class="fas fa-star"></i>
-       			<i class="fas fa-star"></i>
-     		</div>
-    	</div>
- 	 </a>
-	<a class="aside_card" href="#">
-		<div class="card_popular">
-			<img class="pic_popular" src="images/hebergements/4_small/aucoeurdeleauchambresdhotes.jpg" alt="chambre style industriel avec lit double"/>
-		</div>
-		<div class="card_content">
-			<h3>Au coeur de l'eau Chambres d'hôtes</h3> Nuit à partir de 71€
-			<div class="stars">
-        		<i class="fas fa-star"></i>
-        		<i class="fas fa-star"></i>
-        		<i class="fas fa-star"></i>
-        		<i class="fas fa-star"></i>
-       			<i class="fas fa-star"></i>
-     		</div>
-     	</div>
-    </a>
-	<a class="aside_card" href="#">
-		<div class="card_popular">
-			<img class="pic_popular" src="images/hebergements/4_small/hoteltoutbleuetblanc.jpg" alt="chambre simple dans les tons blanc avec lit"/>
-		</div>
-		<div class="card_content">
-			<h3>Hôtel Tout bleu et blanc</h3> Nuit à partir de 68€
-			<div class="stars">
-        		<i class="fas fa-star"></i>
-        		<i class="fas fa-star"></i>
-        		<i class="fas fa-star"></i>
-        		<i class="fas fa-star"></i>
-       		  	<i class="fas fa-star"></i>
-     		</div>
-		</div>
-	</a>
-</aside>
+	
 
 <!-- Section 2 Hebergements -->
 
+<aside id="popular">
+      <h2>Les plus populaires<i class="fas fa-chart-line"></i></h2>
+    <div class="box_popular">
+      <a href="#">
+        <div class="aside_card">
+          <div class="card_popular">
+            <img class="pic_popular" src="images/hebergements/4_small/hotellesoleildumatin.jpg" alt="chambre luxueuse dans les tons vert avec lit double"/>
+          </div>
+          <div class="card_content">
+            <h3>HÃ´tel Le Soleil du matin</h3> Nuit Ã  partir de 128â‚¬
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+       </a>
+      <a href="#">
+        <div class="aside_card">
+          <div class="card_popular">
+            <img class="pic_popular" src="images/hebergements/4_small/aucoeurdeleauchambresdhotes.jpg" alt="chambre style industriel avec lit double"/>
+          </div>
+          <div class="card_content">
+            <h3>Au coeur de l'eau Chambres d'hÃ´tes</h3> Nuit Ã  partir de 71â‚¬
+            <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star grey"></i>
+              </div>
+            </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="aside_card">
+          <div class="card_popular">
+            <img class="pic_popular" src="images/hebergements/4_small/hoteltoutbleuetblanc.jpg" alt="chambre simple dans les tons blanc avec lit"/>
+          </div>
+          <div class="card_content">
+            <h3>HÃ´tel Tout bleu et blanc</h3> Nuit Ã  partir de 68â‚¬
+            <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                    <i class="fas fa-star grey"></i>
+              </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  <div class="see_more"> <a>&nbsp</a></P>
+</aside>
+
 <section id="hebergement">
-	<div id="hebergement_marseille">
-		<h2 class="titre_hebergement">Hébergements à Marseille</h2>
-		<div class="box_hebergement">
-			<a href="#">
-				<div class="card_hebergement">
-					<img class="pic_heberg" src="images/hebergements/4_small/Aubergelacannebiere.jpg" alt="Chambre avec lits superposés vue sur rue"/>
-					<div class="contenu_heberg">
-						<div class="titre_contenu">
-							<h3>Auberge la Cannebière</h3> Nuit à partir de 25€
-						</div>
-						<div class="stars">
-        					<i class="fas fa-star"></i>
-        					<i class="fas fa-star"></i>
-        					<i class="fas fa-star"></i>
-        					<i class="fas fa-star"></i>
-       		  				<i class="fas fa-star"></i>
-     					</div>
-     				</div>
-    			</div>
-  			</a>
-			<a href="#">
-			<div class="card_hebergement">
-					<img class="pic_heberg" src="images/hebergements/4_small/hotelduport.jpg" alt="Chambre dans les tons clair avec deux lits simples"/>
-					<div class="contenu_heberg">
-						<div class="titre_contenu">
-							<h3>Hôtel du port</h3> Nuit à partir de 52€
-						</div>
-						<div class="stars">
-        					<i class="fas fa-star"></i>
-        					<i class="fas fa-star"></i>
-        					<i class="fas fa-star"></i>
-        					<i class="fas fa-star"></i>
-       		  				<i class="fas fa-star"></i>
-     					</div>
-     				</div>
-    			</div>
-  			</a>
-			<a href="#">
-			<div class="card_hebergement">
-					<img class="pic_heberg" src="images/hebergements/4_small/hotellesmouettes.jpg" alt="Chambre avec rangements et lit double">
-					<div class="contenu_heberg">
-						<div class="titre_contenu">
-							<h3>Hôtel les mouettes</h3> Nuit à partir de 76€
-						</div>
-						<div class="stars">
-        					<i class="fas fa-star"></i>
-        					<i class="fas fa-star"></i>
-        					<i class="fas fa-star"></i>
-        					<i class="fas fa-star"></i>
-       		  				<i class="fas fa-star"></i>
-     					</div>
-     				</div>
-    			</div>
-  			</a>
-			<a href="#">
-			<div class="card_hebergement">
-					<img class="pic_heberg" src="images/hebergements/4_small/hoteldelamer.jpg" alt="Chambre dans les tons bleu clair avec lit double">
-						<div class="contenu_heberg">
-							<div class="titre_contenu">
-								<h3>Hôtel de la mer</h3> Nuit à partir de 46€
-							</div>
-						<div class="stars">
-        					<i class="fas fa-star"></i>
-        					<i class="fas fa-star"></i>
-        					<i class="fas fa-star"></i>
-        					<i class="fas fa-star"></i>
-       		  				<i class="fas fa-star"></i>
-     					</div>
-     				</div>
-    		</div>
-  			</a>
-			<a href="#">
-			<div class="card_hebergement">
-					<img class="pic_heberg" src="images/hebergements/4_small/aubergelepanier.jpg" alt="Chambre style rustique avec deux lits superposés">
-					<div class="contenu_heberg">
-						<div class="titre_contenu">
-							<h3>Auberge le panier</h3> Nuit à partir de 23€
-						</div>
-						<div class="stars">
-        				<i class="fas fa-star"></i>
-        				<i class="fas fa-star"></i>
-        				<i class="fas fa-star"></i>
-        				<i class="fas fa-star"></i>
-       		  			<i class="fas fa-star"></i>
-     					</div>
-     			</div>
-    		</div>
-  			</a>
-			<a href="#">
-			<div class="card_hebergement">
-					<img class="pic_heberg" src="images/hebergements/4_small/hotelchezamina.jpg" alt="Chambre avec TV et deux lits simples">
-					<div class="contenu_heberg">
-						<div class="titre_contenu">
-							<h3>Hôtel chez Amina</h3> Nuit à partir de 96€
-						</div>
-						<div class="stars">
-        					<i class="fas fa-star"></i>
-        					<i class="fas fa-star"></i>
-        					<i class="fas fa-star"></i>
-        					<i class="fas fa-star"></i>
-       		 				<i class="fas fa-star"></i>
-     					</div>
-     				</div>
-    			</div>
-  			</a>
-  		</div>
-		<div class="see_more"> <a href="#">Afficher plus</a></P>
-		</div>
-	</div>
-	</div>	
+  <div id="hebergement_marseille">
+    <h2 class="titre_hebergement">HÃ©bergements Ã  Marseille</h2>
+    <div class="box_hebergement">
+      
+      <div class="card_hebergement">
+        <a href="#">
+          <img class="pic_heberg" src="images/hebergements/4_small/Aubergelacannebiere.jpg" alt="Chambre avec lits superposÃ©s vue sur rue"/>
+          <div class="contenu_heberg">
+            <div class="titre_contenu">
+              <h3>Auberge la CannebiÃ¨re</h3> Nuit Ã  partir de 25â‚¬
+            </div>
+            <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                    <i class="fas fa-star grey"></i>
+              </div>
+          </div>
+        </a>
+      </div>  
+      <div class="card_hebergement">
+        <a href="#">
+          <img class="pic_heberg" src="images/hebergements/4_small/hotelduport.jpg" alt="Chambre dans les tons clair avec deux lits simples"/>
+          <div class="contenu_heberg">
+            <div class="titre_contenu">
+              <h3>HÃ´tel du port</h3> Nuit Ã  partir de 52â‚¬
+            </div>
+            <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="card_hebergement">
+        <a href="#">
+          <img class="pic_heberg" src="images/hebergements/4_small/hotellesmouettes.jpg" alt="Chambre avec rangements et lit double">
+          <div class="contenu_heberg">
+            <div class="titre_contenu">
+              <h3>HÃ´tel les mouettes</h3> Nuit Ã  partir de 76â‚¬
+            </div>
+            <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                    <i class="fas fa-star grey"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="card_hebergement">
+        <a href="#">
+          <img class="pic_heberg" src="images/hebergements/4_small/hoteldelamer.jpg" alt="Chambre dans les tons bleu clair avec lit double">
+            <div class="contenu_heberg">
+              <div class="titre_contenu">
+                <h3>HÃ´tel de la mer</h3> Nuit Ã  partir de 46â‚¬
+              </div>
+              <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star grey"></i>
+                      <i class="fas fa-star grey"></i>
+              </div>
+            </div>
+        </a>
+      </div>
+      <div class="card_hebergement">
+        <a href="#">
+          <img class="pic_heberg" src="images/hebergements/4_small/aubergelepanier.jpg" alt="Chambre style rustique avec deux lits superposÃ©s">
+          <div class="contenu_heberg">
+            <div class="titre_contenu">
+              <h3>Auberge le panier</h3> Nuit Ã  partir de 23â‚¬
+            </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                  <i class="fas fa-star grey"></i>
+              </div>
+          </div>
+        </a>
+      </div>
+      <div class="card_hebergement">
+        <a href="#">
+          <img class="pic_heberg" src="images/hebergements/4_small/hotelchezamina.jpg" alt="Chambre avec TV et deux lits simples">
+          <div class="contenu_heberg">
+            <div class="titre_contenu">
+              <h3>HÃ´tel chez Amina</h3> Nuit Ã  partir de 96â‚¬
+            </div>
+            <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+            </div>
+        </a>
+      </div>
+    <div class="see_more"> <a href="#">Afficher plus</a></P>
+    </div>
+  </div>
+  </div>  
 </section>
 </div>
 
-<!-- Section 4 Activités & Details -->
+<!-- Section 4 ActivitÃ©s & Details -->
 
 <div id="ActivitesMarseille">
-	<h3 class="titre_activites">Activités à Marseille</h3>
+	<h3 class="titre_activites">ActivitÃ©s Ã  Marseille</h3>
   	<div class="activites">
   		<div class="activite1">
    			<a href="#">
@@ -266,20 +298,20 @@
     	<div class="activite2">
     		<a href="#">
                 <div class="card_activite2">
-                    <img class="pic_activite2" alt="Fort de pomègues" src="images/activites/4_small/fortdepomegues.jpg"/>
+                    <img class="pic_activite2" alt="Fort de pomÃ¨gues" src="images/activites/4_small/fortdepomegues.jpg"/>
                 </div>
                 <div class="titre_a2">
-                	<h4>Fort de Pomègues</h4>
+                	<h4>Fort de PomÃ¨gues</h4>
                 </div>
             </a>
         </div>
         <div class="activite3">
         	<a href="#">
         		<div class="card_activite3">
-                    <img class="pic_activite3" alt="Îles du frioul" src="images/activites/4_small/ilesdufrioul.jpg"/>
+                    <img class="pic_activite3" alt="ÃŽles du frioul" src="images/activites/4_small/ilesdufrioul.jpg"/>
                 </div>
                 	<div class="titre_a3">
-                	<h4>Îles du Frioul</h4>
+                	<h4>ÃŽles du Frioul</h4>
             	</div>
             </a>
         </div>
@@ -326,15 +358,15 @@
   	<ul>
     	<li><h2>A propos</h2></li>
     	<li><a href="#">Fonctionnement du site</a></li>
-    	<li><a href="#">Conditions générales de vente</a></li>
-    	<li><a href="#">Données et confidentialité</a></li>
+    	<li><a href="#">Conditions gÃ©nÃ©rales de vente</a></li>
+    	<li><a href="#">DonnÃ©es et confidentialitÃ©</a></li>
     </ul>
   </section>
   <section>
 		<ul>
-    	<li><h2>Nos hébergements</h2></li>
-    	<li><a href="#">Charte qualité</a></li>
-    	<li><a href="#">Soumettre votre hôtel</a></li>
+    	<li><h2>Nos hÃ©bergements</h2></li>
+    	<li><a href="#">Charte qualitÃ©</a></li>
+    	<li><a href="#">Soumettre votre hÃ´tel</a></li>
   	</ul>
   </section>
   <section>
