@@ -20,7 +20,7 @@ body
   margin: 0px;
 }
 div {
- font-family: Raleway, sans-serif, inherit;
+ font-family: Raleway, sans-serif;
  text-decoration: none;   
 }
 
@@ -29,7 +29,7 @@ h1, h2, h3, strong{
 }
 
 p {color: black;
-  font-family : Raleway, sans-serif, inherit;
+  font-family : Raleway, sans-serif;
 }
 
 img {
@@ -415,7 +415,6 @@ a:active {
   max-width: 245px;
   border: 3px solid white;
   padding: 5px 5px 10px 5px;
-  background-color: white;
   width: 320px;
   height: 200px;
   margin-bottom: 28px;
@@ -508,7 +507,7 @@ a:active {
 
 .see_more {
   text-decoration: none;
-  font-family : Raleway, sans-serif, inherit;
+  font-family : Raleway, sans-serif;
   font-size: 15px;
   padding: 0px 5px;
 }
@@ -681,31 +680,6 @@ footer a {
   display: none;
 }
 
-@media screen and (max-width: 1380px) {
-  body {
-    padding: 0px 15px;
-  }
-
-  .card_hebergement {
-    width: calc(50% - 20px);
-    max-width: unset;
-    height: 200px;
-  }
-
-  .activites {
-    padding: 0px 5px;
-    margin-left: 0px;
-  }
-
-  .activite1 {
-    margin: 0px;
-  }
-
-  .activite1, .activite2, .activite3, .activite4, .activite5, .activite6 {
-    max-width: calc(100% - 20px);
-  }
-}
-
 @media screen and (max-width: 1280px) {
   body {
     padding: 0px 15px;
@@ -770,7 +744,7 @@ footer a {
   }
 
   .pic_heberg {
-    height: 150px;
+    height: 100px;
   }
   
   .box_popular {
@@ -838,7 +812,11 @@ footer a {
   .card_hebergement {
     width: calc(100% - 20px);
     max-width: unset;
-    height: 230px;
+    height: 185px;
+  }
+
+  .pic_heberg {
+    height: 110px;
   }
 
   .activite1, .activite2_3, .activite4, .activite5_6 {
