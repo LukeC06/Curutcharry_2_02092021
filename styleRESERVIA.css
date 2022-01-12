@@ -20,7 +20,7 @@ body
   margin: 0px;
 }
 div {
- font-family: Raleway, sans-serif, inherit;
+ font-family: Raleway, sans-serif;
  text-decoration: none;   
 }
 
@@ -29,7 +29,7 @@ h1, h2, h3, strong{
 }
 
 p {color: black;
-  font-family : Raleway, sans-serif, inherit;
+  font-family : Raleway, sans-serif;
 }
 
 img {
@@ -50,6 +50,13 @@ nav{
   justify-content: space-between;
 }
 
+.link [data-active=true] {
+  color: #0065FC;
+}
+.links:hover {
+  color: #0065FC;
+}
+
 .links {
   width: 450px;
   text-align: center;
@@ -63,8 +70,12 @@ nav{
   width: 110px;
   float: left;
 }
+.link:hover {
+  color: #0065FC;
+  border-top: solid 2px #0065FC;
+}
 
-.link.active {
+.link.active:hover {
   color: #0065FC;
   border-top: solid 2px #0065FC;
 }
@@ -415,7 +426,6 @@ a:active {
   max-width: 245px;
   border: 3px solid white;
   padding: 5px 5px 10px 5px;
-  background-color: white;
   width: 320px;
   height: 200px;
   margin-bottom: 28px;
@@ -508,7 +518,7 @@ a:active {
 
 .see_more {
   text-decoration: none;
-  font-family : Raleway, sans-serif, inherit;
+  font-family : Raleway, sans-serif;
   font-size: 15px;
   padding: 0px 5px;
 }
@@ -646,7 +656,6 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #F2F2F2;
   max-width: 1350px;
   padding: 15px 20px 0px 0px;
   margin-top: 80px;
@@ -679,31 +688,6 @@ footer a {
 
 #mobile_header {
   display: none;
-}
-
-@media screen and (max-width: 1380px) {
-  body {
-    padding: 0px 15px;
-  }
-
-  .card_hebergement {
-    width: calc(50% - 20px);
-    max-width: unset;
-    height: 200px;
-  }
-
-  .activites {
-    padding: 0px 5px;
-    margin-left: 0px;
-  }
-
-  .activite1 {
-    margin: 0px;
-  }
-
-  .activite1, .activite2, .activite3, .activite4, .activite5, .activite6 {
-    max-width: calc(100% - 20px);
-  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -751,7 +735,7 @@ footer a {
   .pic_activite5, .pic_activite6 {
     height: 150px;
   }
-}
+
 
 
 @media screen and (max-width: 990px) {
@@ -770,7 +754,7 @@ footer a {
   }
 
   .pic_heberg {
-    height: 150px;
+    height: 100px;
   }
   
   .box_popular {
@@ -838,7 +822,11 @@ footer a {
   .card_hebergement {
     width: calc(100% - 20px);
     max-width: unset;
-    height: 230px;
+    height: 185px;
+  }
+
+  .pic_heberg {
+    height: 110px;
   }
 
   .activite1, .activite2_3, .activite4, .activite5_6 {
@@ -926,23 +914,23 @@ footer a {
   footer {
     display: unset;
     margin-top: 30px;
+}
   }
 
   footer section {
     float: left;
     width: 100%;
     text-align: left;
+    background-color: #F2F2F2;
   }
 
   .titre_activites {
     margin-top: 20px;
   }
-}
+
 
 @media screen and (max-width: 400px) {
 
   .pic_activite1, .pic_activite2, .pic_activite3, .pic_activite4, .pic_activite5, .pic_activite6 {
     height: 120px;
   }
-
-}
