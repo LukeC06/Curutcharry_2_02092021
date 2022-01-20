@@ -197,7 +197,7 @@ input:-moz-placeholder { /* Firefox 18- */
 .filters_icons{
   height: 42px;
   width: 42px;
-  border-radius: 50%;
+  border-radius: 45%;
   background-color: #DEEBFF;
   color: #0065FC;
 }
@@ -230,7 +230,6 @@ input:-moz-placeholder { /* Firefox 18- */
 .filters_button:hover {
   background-color: #0065FC;
   color: white;
-  border: 2px solid #DEEBFF;
 }
 
 .stars {
@@ -267,6 +266,7 @@ a:active {
 }
 
 .info_filters i {
+  border: solid 1px #d9d9d9;
   color: #0065FC;
   margin: 10px;
 }
@@ -651,14 +651,12 @@ li{
   list-style: none;
 }
 
-
 footer {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   max-width: 1350px;
-  padding: 15px 20px 0px 0px;
-  margin-top: 80px;
+  margin-top: 60px;
+  background-color: #F2F2F2;
 }
 
 footer section {
@@ -691,9 +689,6 @@ footer a {
 }
 
 @media screen and (max-width: 1280px) {
-  body {
-    padding: 0px 15px;
-  }
 
   .card_hebergement {
     width: calc(50% - 20px);
@@ -784,7 +779,6 @@ footer a {
 
   input {
     width: 80%;
-    padding: 0px 5px;
   }
 
   #hebergement {
@@ -897,7 +891,7 @@ footer a {
     color: #000;
   }
 
-  .link.active {
+  .link .active {
     border-top: none;
     border-bottom: solid 3px #0065FC;
   }
@@ -906,32 +900,48 @@ footer a {
     color: #0065FC;
   }
 
+  .link:hover {
+    color: #0065FC;
+    border-bottom: solid 4px #0065FC;
+    border-top: none;
+  }
+  
+  .link.active:hover {
+    color: #0065FC;
+    border-bottom: solid 4px #0065FC;
+    border-top: none;
+
   .icons_search {
     width: 50px;
     border-radius: 15px;
   }
 
-  footer {
-    display: unset;
-    margin-top: 30px;
-}
-  }
-
-  footer section {
-    float: left;
-    width: 100%;
-    text-align: left;
-    background-color: #F2F2F2;
-  }
-
   .titre_activites {
     margin-top: 20px;
   }
+}
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
 
-  .pic_activite1, .pic_activite2, .pic_activite3, .pic_activite4, .pic_activite5, .pic_activite6 {
-    height: 120px;
+.pic_activite1, .pic_activite2, .pic_activite3, .pic_activite4, .pic_activite5, .pic_activite6 {
+    height: 80px;
+  }
+
+ footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F2F2;
+}
+
+footer section {
+  width: 100%;
+}
+
+ footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  text-align: left; 
   }
 }
